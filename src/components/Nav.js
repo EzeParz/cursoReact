@@ -4,6 +4,7 @@ const Nav = {
     display:"flex",
     flexDirection:"wrap",
     justifyContent: "space-between",
+
 }
 
 export default Nav;

@@ -6,9 +6,9 @@ function Carrito ({imagen}){
     
     return (
 
+        
         <div>
             <img style={CarritoDise} src={imagen}/>
-
         </div>
     )
 }

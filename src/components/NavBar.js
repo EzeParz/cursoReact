@@ -2,13 +2,13 @@ import Nav2 from "./Nav2";
 
 
 
-function NavBar ({sectores}){
+function NavBar (props){
 
     
     return (
 
         <div>
-            <h2 style={Nav2}>{sectores}</h2>
+            <h2 style={Nav2}>{props.titulo}</h2>
 
         </div>
     )

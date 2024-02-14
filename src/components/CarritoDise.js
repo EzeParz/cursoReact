@@ -1,7 +1,7 @@
 
 
 const CarritoDise = {
-    width:"5em",
+    width:"3em",
 
 };
 
