@@ -6,7 +6,7 @@ import Frutas from "./components/Frutas";
 import NavBar from './components/NavBar';
 import Nav from "./components/Nav" 
 import Nav2 from "./components/Nav2" 
-import CarritoDiseño from './components/CarritoDiseño';
+import CarritoDise from './components/CarritoDise';
 
 
 function App(){
@@ -16,15 +16,17 @@ function App(){
       <a style={Frutas}>
       <ProfileCard style={Frutas.imagen} imagen={logo}/>
       </a>
-      
-      <div style={Nav2}>
-        <NavBar  sectores="Inicio"/>
-        <NavBar  sectores="Productos" />
-        <NavBar  sectores="Nosotros"/>
-        <NavBar  sectores="Contacto"/>
-        <Carrito style={CarritoDiseño.imagen} imagen={Carrito}/>
+      <div>
+        <div style={Nav2}>
+          <NavBar  sectores="Inicio"/>
+          <NavBar  sectores="Productos" />
+          <NavBar  sectores="Nosotros"/>
+          <NavBar  sectores="Contacto"/>
+        </div>
+        {/* <a style={CarritoDise}>
+          <Carrito style={CarritoDise.imagen} imagen={Carrito}/>
+          </a> */}
       </div>
-
 
       </nav>
      )

@@ -1,4 +1,4 @@
-import CarritoDiseño from "./CarritoDiseño";
+import CarritoDise from "./CarritoDise";
 
 
 function Carrito ({imagen}){
@@ -7,11 +7,11 @@ function Carrito ({imagen}){
     return (
 
         <div>
-            <img style={CarritoDiseño} src={imagen}/>
+            <img style={CarritoDise} src={imagen}/>
 
         </div>
     )
 }
 
 
-export default CarritoDiseño;
+export default Carrito;
