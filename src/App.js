@@ -1,27 +1,31 @@
 import React from 'react';
 import logo from "./components/img/logo.png"
+import Carrito from "./components/img/Carrito.png"
 import ProfileCard from "./components/ProfileCard";
 import Frutas from "./components/Frutas";
-import NavBar from './components/NavBar';  
+import NavBar from './components/NavBar';
+import Nav from "./components/Nav" 
+import Nav2 from "./components/Nav2" 
+import CarritoDiseño from './components/CarritoDiseño';
 
 
 function App(){
      return(
-      <nav>
+      <nav style={Nav}>
 
       <a style={Frutas}>
       <ProfileCard style={Frutas.imagen} imagen={logo}/>
       </a>
-      <div>
-        
+      
+      <div style={Nav2}>
+        <NavBar  sectores="Inicio"/>
+        <NavBar  sectores="Productos" />
+        <NavBar  sectores="Nosotros"/>
+        <NavBar  sectores="Contacto"/>
+        <Carrito style={CarritoDiseño.imagen} imagen={Carrito}/>
       </div>
 
 
-        /* <div style={Frutas}>
-          {/* <ProfileCard style={Frutas.imagen} titulo="Arandanos" parrafo="Ricos y Saludables" imagen={Arandanos}/>
-          <ProfileCard style={Frutas.imagen} titulo="Frutilla" parrafo="Ricos y Saludables" imagen={Frutilla}/>
-          <ProfileCard style={Frutas.imagen} titulo="Frutos Rojos" parrafo="Ricos y Saludables" imagen={FrutosRojos}/> */}  
-        </div> */
       </nav>
      )
     

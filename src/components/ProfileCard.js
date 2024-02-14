@@ -1,7 +1,7 @@
 import Frutas from "./Frutas";
 
 
-function ProfileCard ({imagen, titulo, parrafo}){
+function ProfileCard ({imagen}){
 
     
     return (

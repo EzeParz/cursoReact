@@ -1,4 +1,4 @@
-import
+import Nav2 from "./Nav2";
 
 
 
@@ -8,7 +8,7 @@ function NavBar ({sectores}){
     return (
 
         <div>
-            <img style={Frutas} src={imagen}/>
+            <h2 style={Nav2}>{sectores}</h2>
 
         </div>
     )
