@@ -1,7 +1,8 @@
-import Frutas from "./Frutas";
+import
 
 
-function ProfileCard ({imagen, titulo, parrafo}){
+
+function NavBar ({sectores}){
 
     
     return (
@@ -14,4 +15,4 @@ function ProfileCard ({imagen, titulo, parrafo}){
 }
 
 
-export default ProfileCard;
+export default NavBar;

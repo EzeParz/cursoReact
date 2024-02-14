@@ -3,15 +3,8 @@
 const Frutas = {
     display: 'flex',
     flexDirection: 'wrap',
-    width: '252px',
+    width: '5em',
 };
- const FrutasTama = {
-    imagen: {
-        width: '50x',
-        margin: '52em',
 
-    },
 
- };
-
-export { Frutas, FrutasTama};
+export default Frutas;

@@ -1,20 +1,28 @@
 import React from 'react';
+import logo from "./components/img/logo.png"
 import ProfileCard from "./components/ProfileCard";
-import Arandanos from "./components/img/Arandanos.png";
-import Frutilla from "./components/img/Frutilla.png";
-import FrutosRojos from "./components/img/frutosrojos.jpg"
-import {Frutas, FrutasTama} from "./components/Frutas"
+import Frutas from "./components/Frutas";
+import NavBar from './components/NavBar';  
+
 
 function App(){
      return(
-      <div style={Frutas}>
-      <h1> Frutas </h1>
-        <div style={Frutas}>
-          <ProfileCard style={FrutasTama.imagen} titulo="Arandanos" parrafo="Ricos y Saludables" imagen={Arandanos}/>
-          <ProfileCard style={FrutasTama.imagen} titulo="Frutilla" parrafo="Ricos y Saludables" imagen={Frutilla}/>
-          <ProfileCard style={FrutasTama.imagen} titulo="Frutos Rojos" parrafo="Ricos y Saludables" imagen={FrutosRojos}/>  
-        </div>
+      <nav>
+
+      <a style={Frutas}>
+      <ProfileCard style={Frutas.imagen} imagen={logo}/>
+      </a>
+      <div>
+        
       </div>
+
+
+        /* <div style={Frutas}>
+          {/* <ProfileCard style={Frutas.imagen} titulo="Arandanos" parrafo="Ricos y Saludables" imagen={Arandanos}/>
+          <ProfileCard style={Frutas.imagen} titulo="Frutilla" parrafo="Ricos y Saludables" imagen={Frutilla}/>
+          <ProfileCard style={Frutas.imagen} titulo="Frutos Rojos" parrafo="Ricos y Saludables" imagen={FrutosRojos}/> */}  
+        </div> */
+      </nav>
      )
     
 }
