@@ -9,6 +9,8 @@ import Nav2 from "./components/Nav2"
 import CarritoDise from './components/CarritoDise';
 import Carrito from './components/Carrito';
 
+import "bulma/css/bulma.css"
+
 
 function App(){
      return(
@@ -21,10 +23,7 @@ function App(){
       </a>
       <div style={Nav2}>
         <div style={Nav2}>
-          <NavBar  titulo="Inicio"/>
-          <NavBar  titulo="Productos" />
-          <NavBar  titulo="Nosotros"/>
-          <NavBar  titulo="Contacto"/>
+          <NavBar  titulo="Inicio" titulo2="Productos" titulo3="Nosotros" titulo4="Contacto"/>
         </div>
         <a>
           <div style={CarritoDise} >

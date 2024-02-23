@@ -3,7 +3,7 @@ const Nav2 = {
 
 
         display:"flex",
-        flexdirection:"wrap",
-        marginRight:"1em"
+        marginRight:"1em",
+        alignItems:"center",
 }
 export default Nav2;
