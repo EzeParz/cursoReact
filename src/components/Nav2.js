@@ -1,9 +1,9 @@
 const Nav2 = {
         
 
-
+        width:"100%",
         display:"flex",
+        justifyContent:"space-between",
         marginRight:"1em",
-        alignItems:"center",
 }
 export default Nav2;

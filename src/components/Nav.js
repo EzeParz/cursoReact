@@ -1,9 +1,9 @@
 const Nav = {
-
-    width:"100%",
     display:"flex",
     flexDirection:"wrap",
-    justifyContent: "space-between",
+    marginRight:"1em",
+    justifyContent:"space-between",
+    alignItems:"center",
 
 }
 

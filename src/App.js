@@ -4,35 +4,58 @@ import CarritoPng from "./components/img/CarritoPng.png"
 import ProfileCard from "./components/ProfileCard";
 import Frutas from "./components/Frutas";
 import NavBar from './components/NavBar';
-import Nav from "./components/Nav" 
+import Nav from './components/Nav';
 import Nav2 from "./components/Nav2" 
 import CarritoDise from './components/CarritoDise';
 import Carrito from './components/Carrito';
+import CarritoDise1 from "./components/CarritoDise1"
+import SearchBar from "./components/SearchBar";
 
 import "bulma/css/bulma.css"
 
 
 function App(){
+      
+
+  const handleSubmit = (term)=>{
+
+    console.log("Hagamos una busqueda con: ", term)
+
+  }
+
+
+
+
+
      return(
        
 
-      <nav style={Nav}>
+      <><nav>
+         <section className='hero is-primary'>
+           <div style={Nav}>
+             <a style={Frutas}>
+               <ProfileCard style={Frutas.imagen} imagen={logo} />
+             </a>
+             <article style={Nav2}>
+               <div style={Nav2}>
+                 <NavBar titulo="Inicio" titulo2="Productos" titulo3="Nosotros" titulo4="Contacto" />
+               </div>
+               <a style={CarritoDise1}>
+                 <div style={CarritoDise}>
+                   <Carrito style={CarritoDise.imagen} imagen={CarritoPng} />
+                 </div>
+               </a>
+             </article>
+           </div>
+         </section>
 
-      <a style={Frutas}>
-      <ProfileCard style={Frutas.imagen} imagen={logo}/>
-      </a>
-      <div style={Nav2}>
-        <div style={Nav2}>
-          <NavBar  titulo="Inicio" titulo2="Productos" titulo3="Nosotros" titulo4="Contacto"/>
-        </div>
-        <a>
-          <div style={CarritoDise} >
-            <Carrito style={CarritoDise.imagen} imagen={CarritoPng}/>
+       </nav>
+       <main>
+          <div>
+            <SearchBar enSubmit={handleSubmit} />
           </div>
-        </a>
-      </div>
+       </main></>
 
-      </nav>
      )
     
 }
