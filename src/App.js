@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "./components/img/logo.png"
 import CarritoPng from "./components/img/CarritoPng.png"
 import ProfileCard from "./components/ProfileCard";
@@ -19,10 +19,12 @@ import "bulma/css/bulma.css"
 function App(){
       
 
+  const [img, setImg] = useState ([]);
+
   const handleSubmit = async (term)=>{
 
     const resultado = await SearchImages(term);
-    console.log(resultado);
+    setImg(resultado);
 
   }
 
@@ -56,7 +58,7 @@ function App(){
        <main>
           <div>
             <SearchBar enSubmit={handleSubmit} />
-            <ImageList/>
+            <ImageList images={img}/>
           </div>
        </main></>
 
