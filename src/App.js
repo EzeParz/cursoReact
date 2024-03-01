@@ -10,6 +10,7 @@ import CarritoDise from './components/CarritoDise';
 import Carrito from './components/Carrito';
 import CarritoDise1 from "./components/CarritoDise1"
 import SearchBar from "./components/SearchBar";
+import SearchImages from "./components/SearchImages"
 
 import "bulma/css/bulma.css"
 
@@ -17,9 +18,10 @@ import "bulma/css/bulma.css"
 function App(){
       
 
-  const handleSubmit = (term)=>{
+  const handleSubmit = async (term)=>{
 
-    console.log("Hagamos una busqueda con: ", term)
+    const resultado = await SearchImages(term);
+    console.log(resultado);
 
   }
 
