@@ -10,7 +10,8 @@ import CarritoDise from './components/CarritoDise';
 import Carrito from './components/Carrito';
 import CarritoDise1 from "./components/CarritoDise1"
 import SearchBar from "./components/SearchBar";
-import SearchImages from "./components/SearchImages"
+import SearchImages from "./SearchImages"
+import ImageList from "./components/ImageList"
 
 import "bulma/css/bulma.css"
 
@@ -55,6 +56,7 @@ function App(){
        <main>
           <div>
             <SearchBar enSubmit={handleSubmit} />
+            <ImageList/>
           </div>
        </main></>
 
