@@ -17,6 +17,8 @@ import "bulma/css/bulma.css"
 
 
 function App(){
+
+  
       
 
   const [img, setImg] = useState ([]);
@@ -33,8 +35,7 @@ function App(){
 
 
      return(
-       
-
+      
       <><nav>
          <section className='hero is-primary'>
            <div style={Nav}>
@@ -55,12 +56,12 @@ function App(){
          </section>
 
        </nav>
-       <main>
-          <div>
-            <SearchBar enSubmit={handleSubmit} />
-            <ImageList images={img}/>
-          </div>
-       </main></>
+         <main>
+           <div>
+             <SearchBar enSubmit={handleSubmit} />
+             <ImageList images={img} />
+           </div>
+         </main></>
 
      )
     
